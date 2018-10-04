@@ -6,7 +6,7 @@ export default class Weather extends React.Component {
 
   constructor(props){
     super(props);
-    this.state2 = {
+    this.state = {
         forecast: {
             main: 'Main',
             description: '-',
@@ -47,7 +47,7 @@ export default class Weather extends React.Component {
       <View style = {styles.container}>
         <ImageBackground source={require('./Vista.jpg')} style = {styles.backdrop}>
         <Text style={Subcomponent.font} >Zip code is {this.props.zipCode}</Text>
-        <Forecast {...this.state2.forecast} />
+        <Forecast {...this.state.forecast} />
         
         </ImageBackground>
       </View>

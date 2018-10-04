@@ -1,34 +1,29 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Weather from "./components/Weather"
 
 export default class App extends React.Component {
-  doIt = () => {
-    console.log("Hello from console")
-  }
+  // doIt = () => {
+  //   console.log("Hello from console")
+  // }
 
   render(){
     return(
-      <View style = {styles.container}>
-        <Text onPress={this.doIt}>Hello World</Text>
-      </View>
+
+        <Weather zipCode = "90110" />
+
 
     );
   }
 
-  // render() {
-  //   return (
-  //     <View style={styles.container}>
-  //       <Text>Open up App.js to start working on your app!</Text>
-  //     </View>
-  //   );
-  // }
+  
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });
